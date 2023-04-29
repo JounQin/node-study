@@ -2,17 +2,17 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
+    "jsx": "react-jsxdev",
     "module": "ESNext",
     "moduleResolution": "NodeNext",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "paths": {
-      "okah": [
-        "./web-server/okah/index.js"
-      ]
+      "esbuild-plugin-dynamic-import": [
+        "./esbuild/esbuild-plugin-dynamic-import/index.js"
+      ],
+      "okah": ["./web-server/okah/index.js"]
     },
     "strict": true,
     "target": "ESNext"
