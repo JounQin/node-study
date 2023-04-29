@@ -30,13 +30,13 @@ async function importFresh<T>(modulePath: string) {
 
 const build = async () => {
   await ctx?.cancel()
-  const { dynamicImportPlugin } = await importFresh<
+  const { dynamicImport } = await importFresh<
     typeof import('esbuild-plugin-dynamic-import')
   >('esbuild-plugin-dynamic-import')
   ctx = await esbuild.context({
     absWorkingDir: path.resolve(_filename, '..'),
     entryPoints: ['app/index.tsx'],
-    plugins: [dynamicImportPlugin()],
+    plugins: [dynamicImport()],
     bundle: true,
     // external: ['react', 'react-dom'],
     outdir: 'dist',
