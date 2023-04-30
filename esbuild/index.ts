@@ -38,6 +38,8 @@ const build = async () => {
     entryPoints: ['app/index.tsx'],
     plugins: [dynamicImport()],
     bundle: true,
+    splitting: true,
+    format: 'esm',
     // external: ['react', 'react-dom'],
     outdir: 'dist',
   })
