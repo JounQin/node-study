@@ -6,7 +6,7 @@
     "dev": "NODE_OPTIONS=--experimental-import-meta-resolve tsx esbuild"
   },
   "dependencies": {
-    "esbuild": "^0.17.18",
+    "esbuild": "^0.25.0",
     "fast-glob": "^3.2.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
